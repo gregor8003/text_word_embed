@@ -38,18 +38,18 @@ MDSD
 ^^^^
 
 Multi-Domain Sentiment
-Dataset `(MDSD) version 1 <https://www.cs.jhu.edu/~mdredze/datasets/sentiment/index2.html>`
+Dataset (MDSD) version 1 (https://www.cs.jhu.edu/~mdredze/datasets/sentiment/index2.html)
 contains Amazon reviews from four categories: books, dvd, electronics,
 kitchen & housewares. They are rated from 1 to 5, where 1 or 2 means "negative",
 and 4 or 5 means "positive". The dataset contains labeled and unlabeled data.
 
-* Download `domain_sentiment_data.tar.gz <https://www.cs.jhu.edu/~mdredze/datasets/sentiment/domain_sentiment_data.tar.gz>`
+* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/domain_sentiment_data.tar.gz
 and unpack to the directory of choice.
 
 * Move/copy four subdirectories with categories data to directory named 'mdsd',
 or simply rename unpacked one.
 
-* Download `book.unlabeled.gz <https://www.cs.jhu.edu/~mdredze/datasets/sentiment/book.unlabeled.gz>`,
+* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/book.unlabeled.gz,
 unpack it and place as 'mdsd/books/unlabeled.review'.
 
 You should end up with the following directory structure:
@@ -151,9 +151,9 @@ generates training data for neural network.
 
 The default values for parameters are:
 
-* ``half_window_size`` - ``3``
+* ``half_window_size`` - 3
 
-* ``negative_examples_cnt`` - ``30``
+* ``negative_examples_cnt`` - 30
 
 See `README.data.rst </README.data.rst>`_ for details about training data.
 
@@ -207,11 +207,11 @@ and ``negative_examples_cnt`` must have the same values as given to
 
 The default values for parameters are:
 
-* ``embedding_size`` - ``300``
+* ``embedding_size`` - 300
 
-* ``half_window_size`` - ``3``
+* ``half_window_size`` - 3
 
-* ``negative_examples_cnt`` - ``30``
+* ``negative_examples_cnt`` - 30
 
 See `README.nn.rst </README.nn.rst>`_  for more details about the network.
 
@@ -255,15 +255,15 @@ embedding vectors). This is not a proper clustering. However, it allows to see
 the relations between words at-a-glance.
 
 Finding of nearest neighbors of each word is done with
-`k-d tree <https://en.wikipedia.org/wiki/K-d_tree>`. Exactly
+k-d tree (https://en.wikipedia.org/wiki/K-d_tree). Exactly
 ``nearest_neighbors_cnt`` neighboring words are found for every word. The parameter
 ``kdtree_leafsize`` may be used to optimize the searching process.
 
 The default values for parameters are:
 
-* ``nearest_neighbors_cnt`` - ``100``
+* ``nearest_neighbors_cnt`` - 100
 
-* ``kdtree_leafsize`` - ``16``
+* ``kdtree_leafsize`` - 16
 
 The script produces the following files in ``mdsd`` directory:
 
