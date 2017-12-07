@@ -54,7 +54,8 @@ unpack it and place as 'mdsd/books/unlabeled.review'.
 
 You should end up with the following directory structure:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |
         +---books
@@ -90,7 +91,8 @@ directory.
 
 After the script finishes successfully, you should end up with:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |  mdsd.csv
         +---books
@@ -123,7 +125,8 @@ word indexes in vocabulary
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |  mdsd.csv
         |  wordfreq.json
@@ -161,7 +164,8 @@ The script produces the following sequence of files in ``mdsd`` directory:
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |  mdsd.csv
         |  wordfreq.json
@@ -215,7 +219,8 @@ The script produces the following file in ``mdsd`` directory:
 ``mdsd.cbow.embedding.weights.npy``. After the script finishes successfully,
 the files  in ``mdsd`` directory are:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |  mdsd.csv
         |  wordfreq.json
@@ -272,7 +277,8 @@ to ``nearest_neighbors_cnt``; the words are stored in plain text.
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
 
-::
+.. code-block:: bash
+
     +---mdsd
         |  mdsd.csv
         |  wordfreq.json
