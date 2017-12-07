@@ -43,14 +43,11 @@ contains Amazon reviews from four categories: books, dvd, electronics,
 kitchen & housewares. They are rated from 1 to 5, where 1 or 2 means "negative",
 and 4 or 5 means "positive". The dataset contains labeled and unlabeled data.
 
-* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/domain_sentiment_data.tar.gz
-and unpack to the directory of choice.
+* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/domain_sentiment_data.tar.gz and unpack to the directory of choice.
 
-* Move/copy four subdirectories with categories data to directory named 'mdsd',
-or simply rename unpacked one.
+* Move/copy four subdirectories with categories data to directory named 'mdsd', or simply rename unpacked one.
 
-* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/book.unlabeled.gz,
-unpack it and place as 'mdsd/books/unlabeled.review'.
+* Download https://www.cs.jhu.edu/~mdredze/datasets/sentiment/book.unlabeled.gz, unpack it and place as 'mdsd/books/unlabeled.review'.
 
 You should end up with the following directory structure:
 
@@ -112,16 +109,13 @@ builds vocabulary, and encodes texts into numerical representation.
 
 The script produces the following new files in ``mdsd`` directory:
 
-* ``wordfreq.json``, ``wordfreq.csv`` - contain word frequencies, in descending
-order
+* ``wordfreq.json``, ``wordfreq.csv`` - contain word frequencies, in descending order
 
 * ``word2index.pck`` - pickled dictionary with mapping ``word -> index``
 
 * ``index2word.pck`` - pickled dictionary with mapping ``index -> word``
 
-* ``mdsd.indexed.csv`` - CSV file similar to ``mdsd.csv``, but contains text
-in indexed form, that is, every text document is transformed into sequence of
-word indexes in vocabulary
+* ``mdsd.indexed.csv`` - CSV file similar to ``mdsd.csv``, but contains text in indexed form, that is, every text document is transformed into sequence of word indexes in vocabulary
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
 
@@ -160,6 +154,7 @@ See `README.data.rst </README.data.rst>`_ for details about training data.
 The script produces the following sequence of files in ``mdsd`` directory:
 
 * ``mdsd.csv.cbow.data.input.NNNNNN.npy``, where NNNNNN is integer
+
 * ``mdsd.csv.cbow.data.output.NNNNNN.npy``, where NNNNNN is integer
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
@@ -267,13 +262,9 @@ The default values for parameters are:
 
 The script produces the following files in ``mdsd`` directory:
 
-* ``mdsd.cbow.wordvec.closest.neighbors.npy`` - matrix of size
-``(num_of_words, nearest_neighbors_cnt)``, where for each word the indexes of
-neighboring words are stored as column
+* ``mdsd.cbow.wordvec.closest.neighbors.npy`` - matrix of size ``(num_of_words, nearest_neighbors_cnt)``, where for each word the indexes of neighboring words are stored as column
 
-* ``mdsd.cbow.wordvec.closest.neighbors.csv`` - CSV file with the following
-columns: ``Word``, ``Nearest Word 1``, ..., ``Nearest Word K``, where K is equal
-to ``nearest_neighbors_cnt``; the words are stored in plain text.
+* ``mdsd.cbow.wordvec.closest.neighbors.csv`` - CSV file with the following columns: ``Word``, ``Nearest Word 1``, ..., ``Nearest Word K``, where K is equal to ``nearest_neighbors_cnt``; the words are stored in plain text.
 
 After the script finishes successfully, the files  in ``mdsd`` directory are:
 
