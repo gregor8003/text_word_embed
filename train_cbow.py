@@ -1,9 +1,8 @@
 import functools
 import sys
 
-from keras import backend as K
 from keras import metrics
-from keras.layers import Dense, Embedding, Lambda
+from keras.layers import Dense, Embedding, Flatten
 from keras.models import Sequential
 import numpy as np
 
@@ -61,9 +60,7 @@ def main():
     )
     nn.add(l1)
 
-    l2 = Lambda(
-        lambda x: K.mean(x, axis=1), output_shape=(embed_size,)
-    )
+    l2 = Flatten()
     nn.add(l2)
 
     l3 = Dense(units=2, activation='sigmoid')
