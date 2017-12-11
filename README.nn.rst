@@ -8,9 +8,9 @@ The network effectively has three layers:
 
 * embedding layer, that extracts two embedding vectors, based on word indexes given as input to this layer
 
-* "mean" lambda layer, that calculates element-wise mean of concatenated embedding vectors
+* flatten layer, that simply concatenates embedding vectors
 
-* output layer, with ``sigmoid`` activation function
+* output dense layer, with ``sigmoid`` activation function
 
 The ``adagrad`` is used as optimizer, and ``binary_crossentropy`` is used as
 loss function.
